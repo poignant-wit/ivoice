@@ -1,0 +1,27 @@
+@import "susy";
+
+$susy: (
+        columns: 12,
+        gutter-position: inside,
+        math: fluid,
+        output: float,
+        flow: ltr,
+        debug: (image: show)
+
+);
+
+
+//.container {
+//  @include container;
+//  height: 100%;
+//}
+
+
+//.content{
+//  @include span(12);
+//  //@include push(10);
+//  text-align: center;
+//  display: inline-block;
+//}
+
+
