@@ -1,8 +1,8 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import 'compass';
+@import "base";
 @import "variables";
 @import "layout";
-@import "base";
 
 html {
   @include background-image(image_url("http://psdshare.com/wp-content/uploads/2015/05/Polygon-BG-3.jpg"));
@@ -21,119 +21,5 @@ body {
   font-weight: 200;
 }
 
-//navigation
-nav {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  color: white;
-  font-weight: 100;
-  //background: $primary_bg_color;
-  display: table;
-
-  .nav {
-    @include container;
-    display: table-cell;
-    vertical-align: middle;
-
-    h5 {
-      @include span(1);
-      @include push(1);
-      text-align: left;
-    }
-
-    ul {
-      @include span(8);
-      text-align: center;
-      li {
-        padding: gutter()*3;
-        display: inline;
-      }
-    }
-
-    h6 {
-      @include span(2);
-      @include pull(1);
-      text-align: right;
-    }
-  }
-}
-
-//intro section
-.intro {
-  @include container;
-  display: table;
-  vertical-align: middle;
-  height: 100%;
-  .title {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
 
 
-
-//services section
-
-.services {
-  @include container(10);
-  background: $primary_bg_color;
-  padding: $primary_margin;
-
-  $height_services: 630px;
-
-  h6 {
-    text-align: center;
-    padding-bottom: $primary_margin_half;
-    opacity: $primary_text_opacity;
-
-  }
-
-  .circle {
-    width: 120px;
-    height: 120px;
-    display: inline-block;
-    margin-bottom: $primary_margin_half;
-    background: #0000AA;
-    @include border-radius(50%);
-  }
-
-  .service-text {
-    @include span(2);
-    @include push(2);
-    text-align: center;
-    display: table;
-    min-height: $height_services;
-  }
-  .service-language {
-    @include span(2);
-    @include push(1);
-    text-align: center;
-    display: table;
-    min-height: $height_services;
-  }
-  .service-partner {
-    @include span(2);
-    @include push(1);
-    text-align: center;
-    display: table;
-    min-height: $height_services;
-  }
-  .bottom {
-    display: table-row;
-  }
-  a {
-    text-align: center;
-    display: table-cell;
-    vertical-align: bottom;
-  }
-}
-
-
-
-/*.container {*/
-/*text-align: center;*/
-/*display: table-cell;*/
-/*vertical-align: middle;*/
-/*}*/

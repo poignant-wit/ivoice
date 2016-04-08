@@ -1,5 +1,6 @@
 @import "susy";
 
+
 $susy: (
         columns: 12,
         gutter-position: inside,
@@ -10,18 +11,291 @@ $susy: (
 
 );
 
+//navigation
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-weight: 100;
+  //background: $primary_bg_color;
+  display: table;
 
-//.container {
-//  @include container;
-//  height: 100%;
-//}
+  .nav {
+    @include container;
+    display: table-cell;
+    vertical-align: middle;
+
+    h5 {
+      @include span(1);
+      @include push(1);
+      text-align: left;
+    }
+
+    ul {
+      @include span(8);
+      text-align: center;
+      li {
+        padding: gutter()*3;
+        display: inline;
+      }
+    }
+
+    h6 {
+      @include span(2);
+      @include pull(1);
+      text-align: right;
+    }
+  }
+}
+
+//intro section
+.intro {
+  @include container;
+  display: table;
+  vertical-align: middle;
+  height: 100%;
+  .title {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
 
 
-//.content{
-//  @include span(12);
-//  //@include push(10);
-//  text-align: center;
-//  display: inline-block;
-//}
+
+//services section--
+
+
+
+.services {
+  @include container();
+  background: $primary_bg_color;
+  padding: $primary_margin;
+@include show-grid();
+
+  $height_services: 530px;
+
+
+  @include susy-breakpoint($large) {
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      //display: table-row;
+      margin-bottom: $primary_margin_half;
+      background: #0000AA;
+      @include border-radius(50%);
+
+    }
+
+    .service-text {
+      //@include span(4 of 20);
+      //@include push(3 of 20);
+      //@include span(3);
+      //@include push(1.5);
+      text-align: center;
+      display: table;
+      height: $height_services;
+      min-height: $height_services;
+
+      p{
+        font-size: 1em;
+      }
+
+
+    }
+
+  }
+
+  @include susy-breakpoint($x-large) {
+
+    background: green;
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      //display: table-row;
+      margin-bottom: $primary_margin_half;
+      background: #0000AA;
+      @include border-radius(50%);
+
+    }
+
+    .service-text {
+      @include span(20 of 20);
+      //@include push(3 of 20);
+      //@include span(3);
+      //@include push(1.5);
+      text-align: center;
+      display: table;
+      height: $height_services;
+      min-height: $height_services;
+
+
+
+      p{
+        //@include span(4);
+        //@include span(10 of 20);
+        //@include push(3 of 20);
+        font-size: 1em;
+        //text-align: left;
+        //margin-left: 8em;
+      }
+      .circle{
+        float: left;
+
+      }
+
+
+    }
+
+
+
+  }
+
+
+  @include susy-breakpoint($xx-large){
+
+    background: cornflowerblue;
+    .circle {
+      width: 140px;
+      height: 140px;
+      display: inline-block;
+      //display: table-row;
+      margin-bottom: $primary_margin_half;
+      background: #0000AA;
+      @include border-radius(50%);
+
+    }
+
+    p{
+      width: 300px;
+      display: table;
+      margin: 0 auto;
+      background: red;
+      font-size: 1em;
+      //margin-left: 0;
+
+    }
+    .service-text {
+      //@include span(4 of 20);
+      //@include push(3 of 20);
+      @include span(3);
+      @include push(1.5);
+      text-align: center;
+      display: table;
+      height: $height_services;
+      min-height: $height_services;
+
+      .circle{
+        float: none;
+      }
+
+    }
+    .service-language {
+      @include span(3);
+
+      text-align: center;
+      display: table;
+      min-height: $height_services;
+    }
+    .service-partner {
+      @include span(3);
+      //@include push(1);
+      text-align: center;
+      display: table;
+      min-height: $height_services;
+    }
+    .bottom {
+      display: table-row;
+    }
+    a {
+      text-align: center;
+      display: table-cell;
+      vertical-align: bottom;
+    }
+
+  }
+
+
+
+
+
+
+
+  //@include susy-breakpoint($medium, $susy){
+  //
+  //  h6 {
+  //    font-size: 1em;
+  //  }
+  //
+  //  &{
+  //    background: red;
+  //  }
+  //}
+
+
+
+  //@include susy-breakpoint(800px){
+  //
+  //  //h6 {
+  //  //  font-size: 10px;
+  //  //
+  //  //}
+  //
+  //  &{
+  //    background: red;
+  //  }
+  //
+  //}
+
+
+
+
+
+
+
+
+
+
+
+  h6 {
+    text-align: center;
+    padding-bottom: $primary_margin_half;
+    opacity: $primary_dark_text_opacity;
+
+
+  }
+
+
+
+
+}
+
+
+
+
+//portfolio section
+.portfolio{
+
+  @include container();
+  background: transparent;
+  padding: $primary_margin;
+
+  h6 {
+    text-align: center;
+    padding-bottom: $primary_margin_half;
+    color: $white_text_color;
+    opacity: $primary_white_text_opacity;
+  }
+
+
+
+
+}
+
 
 

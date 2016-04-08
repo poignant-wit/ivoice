@@ -1,0 +1,33 @@
+.clients {
+
+
+  .section-header{
+    color: white;
+    font-weight: 300;
+    margin-bottom: $section-padding-element / 2;
+    opacity: $opacity-white-primary;
+  }
+
+
+  ul{
+
+    white-space: nowrap;
+    overflow-x: auto;
+
+    li{
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background-color: $white-background-color-100;
+      margin: 20px;
+      border-radius: 10px;
+      @include outer-shadow();
+
+    }
+
+  }
+
+
+
+
+}

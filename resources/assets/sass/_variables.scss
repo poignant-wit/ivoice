@@ -1,10 +1,14 @@
 //colors
 $primary_bg_color: #fefefe;
+$white_text_color: white;
+$dark_text_color: black;
 //
 
 //opacity
-$primary_text_opacity: .87;
-$secondary_text_opacity: .54;
+$primary_dark_text_opacity: .87;
+$primary_white_text_opacity: 1;
+$secondary_dark_text_opacity: .54;
+$secondary_white_text_opacity: .7;
 
 
 //margins
@@ -17,7 +21,11 @@ $primary_font: 'Lato', sans-serif;
 
 
 //breakpoints
-$small: 30em;
-$medium: 47em;
-$large: 75em;
+$xx-small: 20em;
+$x-small: 30em;
+$small: 37.5em;
+$medium: 48em;
+$large: 56.25em;
+$x-large: 68.75em;
+$xx-large: 81.25em;
 //

@@ -1,0 +1,40 @@
+.services {
+  text-align: center;
+
+
+
+
+  .service-block {
+    lost-column: 1/3;
+
+    @media screen and (max-width: 800px) {
+      lost-column: 1/1;
+    }
+    text-align: center;
+    min-height: 400px;
+    @media screen and (max-width: 800px) {
+      min-height: 100px;
+    }
+
+    h6 {
+      font-family: 'Roboto';
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: $section-padding-element;
+      opacity: $opacity-dark-primary;
+    }
+
+    p {
+      font-size: .9em;
+      font-weight: 400;
+      opacity: $opacity-dark-secondary;
+      margin-bottom: $section-padding-element;
+
+    }
+
+  }
+
+  @include outer-shadow-black();
+
+}

@@ -1,0 +1,16 @@
+.section-header-line{
+  width: 70px;
+  height: 2px;
+  display: inline-block;
+  background: $color-primary;
+  margin-bottom: $section-padding-element * 2;
+  opacity: $opacity-dark-primary;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: $section-padding-element / 2;
+  opacity: $opacity-dark-primary;
+}
