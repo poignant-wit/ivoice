@@ -5,6 +5,7 @@ var precss = require('precss');
 var sass = require('gulp-sass');
 var rename = require("gulp-rename");
 var lost = require("lost");
+var autoprefixer = require('autoprefixer');
 
 
 
@@ -21,7 +22,8 @@ gulp.task('styles', function(){
             }
         }),
         lost,
-        require('postcss-font-magician')({ /* options */ })
+        require('postcss-font-magician')({ /* options */ }),
+        autoprefixer({browsers:'last 2 version'})
     ];
    return gulp.src('resources/assets/postcss/app.scss')
        .pipe(sass())
@@ -45,6 +47,7 @@ gulp.task('watch', function() {
 
     gulp.watch('resources/assets/postcss/*.scss', ['styles']);
     gulp.watch('resources/assets/postcss/*/*/*.scss', ['styles']);
+    gulp.watch('resources/assets/postcss/*/*.scss', ['styles']);
     gulp.watch("resources/views/*.blade.php").on('change', browserSync.reload);
 });
 

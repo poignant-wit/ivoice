@@ -1,0 +1,35 @@
+$padding-button-ver: 5px;
+$padding-button-hor: 16px;
+
+
+.btn{
+
+  padding: $padding-button-ver $padding-button-hor;
+  font-size: 14px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.btn-transparent-white{
+  border: 2px solid white;
+}
+
+.btn-transparent-primary{
+  border: 2px solid $color-primary;
+  color: $color-primary;
+
+  &:hover{
+  background-color: $color-primary ;
+    color: white;
+}
+}
+
+
+.btn-primary{
+  background-color: $color-accent-primary;
+  border: 2px solid $color-accent-primary;
+  color: rgba(255,255,255,.87);
+
+}

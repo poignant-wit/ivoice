@@ -16,7 +16,8 @@
     "precss": "^1.4.0"
   },
   "dependencies": {
-    "laravel-elixir": "^4.0.0",
-    "bootstrap-sass": "^3.0.0"
+    "autoprefixer": "^6.3.6",
+    "bootstrap-sass": "^3.0.0",
+    "laravel-elixir": "^4.0.0"
   }
 }

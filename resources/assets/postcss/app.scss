@@ -2,20 +2,28 @@
 @import "mixins.scss";
 @import "helpers.scss";
 
+@import "components/nav";
+@import "components/buttons";
+@import "components/home/partials";
+@import "components/home/section-intro";
 @import "components/home/section-services";
 @import "components/home/section-clients";
 @import "components/home/section-comments";
-@import "components/home/partials";
+@import "components/home/section-howto";
+@import "components/home/section-footer";
+@import "components/home/section-order-button";
 
 
 
 html {
-  background: url("http://psdshare.com/wp-content/uploads/2015/05/Polygon-BG-3.jpg") no-repeat fixed;
+  background: url("http://www.designshock.com/wp-content/uploads/2015/02/sea.jpg") no-repeat fixed;
   background-size: cover;
+
 }
 
 body {
   font-family: 'Roboto';
+
 }
 
 section {
@@ -26,10 +34,7 @@ section {
 
 
 
-.intro {
-  text-align: center;
-  height: 50vh;
-}
+
 
 .container {
   lost-center: 1100px;
@@ -39,41 +44,6 @@ section {
   }
 }
 
-.circle {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  //display: table-row;
-
-  margin-bottom: $section-padding-element;
-
-  border-radius: 50%;
-
-  @include inner-shadow();
-  border: 1px solid white;
-
-}
-
-.circle-inner {
-  width: 84px;
-  height: 84px;
-  display: inline-block;
-  margin-bottom: $section-padding-element;
-  border-radius: 50%;
-  background: radial-gradient($color-primary, $color-secondary);
-  position: relative;
-  top: 8px;
-  @include outer-shadow-small(.5);
-
-  img{
-    position: relative;
-    top: 14px;
-    width: 50px;
-
-  }
-
-
-}
 
 
 
@@ -88,11 +58,7 @@ section {
 
 
 
-.how-order {
-  text-align: center;
-  background: $white-background-color-100;
 
-}
 
 
 

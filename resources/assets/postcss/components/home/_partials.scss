@@ -12,5 +12,63 @@
   font-size: 25px;
   font-weight: 400;
   margin-bottom: $section-padding-element / 2;
-  opacity: $opacity-dark-primary;
+  opacity: $opacity-dark-secondary;
 }
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  //display: table-row;
+
+  margin-bottom: $section-padding-element;
+
+  border-radius: 50%;
+
+  @include inner-shadow();
+  border: 1px solid white;
+
+}
+
+.circle-inner {
+  width: 84px;
+  height: 84px;
+  display: inline-block;
+  margin-bottom: $section-padding-element;
+  border-radius: 50%;
+  background: radial-gradient($color-primary, $color-secondary);
+  position: relative;
+  top: 8px;
+  @include outer-shadow-small(.5);
+
+  img{
+    position: relative;
+    top: 14px;
+    width: 50px;
+
+  }
+}
+
+
+
+
+
+.text-gradient{
+  background: radial-gradient($color-text-primary, $color-text-secondary);
+}
+
+
+
+.speaker-gradient{
+  background: radial-gradient($color-speaker-primary, $color-speaker-secondary);
+}
+
+.decor-gradient{
+  background: radial-gradient($color-decor-primary, $color-decor-secondary);
+}
+
+.payment-gradient{
+  background: radial-gradient($color-payment-primary, $color-payment-secondary);
+}
+

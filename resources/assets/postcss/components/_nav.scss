@@ -1,0 +1,56 @@
+nav {
+
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  color: $white-background-color-300;
+  font-weight: 300;
+  background: $color-primary;
+
+  top: 0;
+
+  z-index: 20;
+
+  @include outer-shadow();
+
+  .nav {
+
+    //lost-utility: clearfix;
+    lost-center: 1100px;
+    margin-top: 20px;
+
+    .nav-block {
+      lost-column: 1/5 0;
+
+    }
+
+    .nav-block:nth-child(2) {
+      lost-column: 3/5 0;
+
+    }
+
+    h5 {
+      text-align: left;
+      font-size: 1em;
+    }
+
+    ul {
+
+      text-align: center;
+
+      li {
+        padding: 20px;
+        display: inline;
+        font-size: 1em;
+      }
+    }
+
+    h6 {
+      text-align: right;
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+  }
+
+}

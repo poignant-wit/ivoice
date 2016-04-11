@@ -3,7 +3,7 @@
 
 
 
-  @include outer-shadow();
+
   z-index: 5;
   position: relative;
 
@@ -14,7 +14,7 @@
 
 
     background-color: $white-background-color-50;
-    @include outer-shadow-small(.3);
+    @include outer-shadow-small(.1);
 
 
     .circle{

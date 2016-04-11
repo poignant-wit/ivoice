@@ -23,6 +23,16 @@
       border-radius: 10px;
       @include outer-shadow();
 
+      img{
+        width: 100px;
+
+        display: block;
+        position: relative;
+        left: 50px;
+        top: 50px;
+
+      }
+
     }
 
   }

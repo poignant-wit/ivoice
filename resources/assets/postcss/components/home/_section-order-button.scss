@@ -1,0 +1,24 @@
+.order-button{
+
+
+
+
+  @include outer-shadow();
+  .order-button-block{
+    lost-column: 1/2;
+
+
+    text-align: right;
+
+
+    h5{
+      color: $white-background-color-100;
+      font-weight: 300;
+    }
+
+  }
+
+  .order-button-block:nth-child(2){
+    text-align: left;
+  }
+}
