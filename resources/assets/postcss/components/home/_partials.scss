@@ -27,7 +27,7 @@
   border-radius: 50%;
 
   @include inner-shadow();
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, .2);
 
 }
 

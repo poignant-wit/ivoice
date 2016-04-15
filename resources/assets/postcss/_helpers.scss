@@ -23,3 +23,10 @@
   padding-bottom: $padding-section;
   opacity: 1;
 }
+
+.with-background-black {
+  background-color: $color-background-black;
+  padding-top: $padding-section;
+  padding-bottom: $padding-section * 2;
+  opacity: 1;
+}

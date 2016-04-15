@@ -1,7 +1,8 @@
-.bg-welcome{
+.bg-speakers{
 
-  background: url("http://www.designshock.com/wp-content/uploads/2015/02/sea.jpg") no-repeat fixed;
+  background: url("http://xn--c1absb.xn--p1ai/wp-content/uploads/2015/01/low-poly-texture-5.png") no-repeat fixed;
   background-size: cover;
+
   width: 100%;
   height: 100vh;
   z-index: -10;
@@ -12,14 +13,15 @@
 }
 
 
+.intro-speakers {
 
-.intro {
+  height: 30vh;
 
-  height: 100vh;
-  top: 40vh;
+  min-height: 200px;
+
   position: relative;
 
-
+  top: 14vh;
 
   h4{
     color: white;
@@ -36,16 +38,7 @@
     font-weight: 300;
   }
 
-  p{
-    color: white;
-    opacity: $opacity-white-secondary;
-    margin-top: 10px;
-    font-weight: 300;
-  }
 
-  .intro-buttons{
-    margin-top: 30px;
-  }
 
 
 }

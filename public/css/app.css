@@ -98,6 +98,10 @@
 .with-background-white-100,
 .with-background-white-50,
 .with-background-blue,
+.with-background-black,
+h6,
+h5,
+a,
 nav,
 nav .nav,
 nav .nav .nav-block,
@@ -105,6 +109,7 @@ nav .nav h5,
 nav .nav ul,
 nav .nav ul li,
 nav .nav h6,
+nav a,
 .btn,
 .btn-transparent-white,
 .btn-transparent-primary,
@@ -118,9 +123,11 @@ nav .nav h6,
 .speaker-gradient,
 .decor-gradient,
 .payment-gradient,
+.bg-welcome,
 .intro,
 .intro h4,
 .intro h6,
+.intro p,
 .intro .intro-buttons,
 .services,
 .services .service-block,
@@ -128,10 +135,16 @@ nav .nav h6,
 .services .service-block,
 .services .service-block h6,
 .services .service-block p,
+.clients,
 .clients .section-header,
 .clients ul,
 .clients ul li,
 .clients ul li img,
+.clients ul li .img-cover,
+.clients .comment-author,
+.clients .comment-author-company,
+.clients p,
+.clients .comment-block,
 .comments,
 .comments .comment-block,
 .comments .comment-block .circle,
@@ -151,7 +164,15 @@ nav .nav h6,
 .order-button,
 .order-button .order-button-block,
 .order-button .order-button-block h5,
-html,
+.bg-speakers,
+.intro-speakers,
+.intro-speakers h4,
+.intro-speakers h6,
+.speakers-table p,
+.speakers-table .speakers-table-block,
+.speakers-table .speakers-table-block ul,
+.speakers-table .speakers-table-block li,
+.speakers-table .speakers-table-block li .speakers-active,
 body,
 section,
 .container,
@@ -181,12 +202,30 @@ section,
   padding-bottom: 3em;
   opacity: 1; }
 
+.with-background-black {
+  background-color: #424242;
+  padding-top: 3em;
+  padding-bottom: 6em;
+  opacity: 1; }
+
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+  opacity: 0.54; }
+
+h5 {
+  font-size: 1.1em; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
 nav {
   position: fixed;
   width: 100%;
   height: 60px;
   color: #e0e0e0;
-  font-weight: 300;
+  font-weight: 500;
   background: #2196f3;
   top: 0;
   z-index: 20;
@@ -242,7 +281,11 @@ nav {
     nav .nav h6 {
       text-align: right;
       font-size: 1em;
-      font-weight: 300; }
+      font-weight: 500; }
+  nav a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none; }
 
 .btn {
   padding: 5px 16px;
@@ -287,8 +330,8 @@ nav {
   display: inline-block;
   margin-bottom: 1em;
   border-radius: 50%;
-  box-shadow: inset 0 3px 10px 0 grey;
-  border: 1px solid white; }
+  box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2); }
 
 .circle-inner {
   width: 84px;
@@ -317,6 +360,16 @@ nav {
 .payment-gradient {
   background: radial-gradient(#ffc107, #ffa000); }
 
+.bg-welcome {
+  background: url("http://www.designshock.com/wp-content/uploads/2015/02/sea.jpg") no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
 .intro {
   height: 100vh;
   top: 40vh;
@@ -325,11 +378,16 @@ nav {
     color: white;
     opacity: 1;
     font-size: 2.6em;
-    font-weight: 300; }
+    font-weight: 400; }
   .intro h6 {
     color: white;
     opacity: 1;
     font-size: 1.5em;
+    font-weight: 300; }
+  .intro p {
+    color: white;
+    opacity: 0.7;
+    margin-top: 10px;
     font-weight: 300; }
   .intro .intro-buttons {
     margin-top: 30px; }
@@ -382,29 +440,72 @@ nav {
       opacity: 0.54;
       margin-bottom: 1em; }
 
-.clients .section-header {
-  color: white;
-  font-weight: 300;
-  margin-bottom: 0.5em;
-  opacity: 1; }
-
-.clients ul {
-  white-space: nowrap;
-  overflow-x: auto; }
-  .clients ul li {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    background-color: #f5f5f5;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.5); }
-    .clients ul li img {
-      width: 100px;
-      display: block;
-      position: relative;
-      left: 50px;
-      top: 50px; }
+.clients {
+  box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.5); }
+  .clients .section-header {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    opacity: 0.7; }
+  .clients ul {
+    white-space: nowrap;
+    overflow: hidden; }
+    .clients ul li {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background-color: #f5f5f5;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.5); }
+      .clients ul li img {
+        width: 100px;
+        display: block;
+        position: relative;
+        left: 50px;
+        top: 50px;
+        opacity: 0.6;
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%); }
+      .clients ul li .img-cover {
+        width: 150px;
+        height: 150px;
+        background: #f5f5f5;
+        opacity: 0.7;
+        position: relative;
+        left: 25px;
+        top: -100px; }
+  .clients .comment-author {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    opacity: 0.5; }
+  .clients .comment-author-company {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    opacity: 0.5; }
+  .clients p {
+    color: white;
+    opacity: 0.7;
+    padding: 10px; }
+  .clients .comment-block {
+    width: calc(99.99% * 1/3 - (30px - 30px * 1/3)); }
+  .clients .comment-block:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none; }
+  .clients .comment-block:last-child {
+  margin-right: 0; }
+  .clients .comment-block:nth-child(3n) {
+  margin-right: 0;
+  float: right; }
+  .clients .comment-block:nth-child(3n + 1) {
+  clear: left; }
 
 .comments {
   z-index: 5;
@@ -510,7 +611,7 @@ nav {
   width: 80%;
   padding: 5px;
   border: 3px solid #cccccc;
-  box-shadow: inset 0 3px 10px 0 grey; }
+  box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.5); }
 
 .footer .send-message {
   text-align: left; }
@@ -548,9 +649,131 @@ nav {
   .order-button .order-button-block:nth-child(2) {
     text-align: left; }
 
-html {
-  background: url("http://www.designshock.com/wp-content/uploads/2015/02/sea.jpg") no-repeat fixed;
-  background-size: cover; }
+.bg-speakers {
+  background: url("http://xn--c1absb.xn--p1ai/wp-content/uploads/2015/01/low-poly-texture-5.png") no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.intro-speakers {
+  height: 30vh;
+  min-height: 200px;
+  position: relative;
+  top: 14vh; }
+  .intro-speakers h4 {
+    color: white;
+    opacity: 1;
+    font-size: 2.6em;
+    font-weight: 400; }
+  .intro-speakers h6 {
+    color: white;
+    opacity: 1;
+    font-size: 1.5em;
+    font-weight: 300; }
+
+.speakers-table p {
+  opacity: 0.54; }
+
+.speakers-table .speakers-table-block {
+  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1); }
+
+.speakers-table .speakers-table-block:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none; }
+
+.speakers-table .speakers-table-block:last-child {
+  margin-right: 0; }
+
+.speakers-table .speakers-table-block:nth-child(0n) {
+  margin-right: 0;
+  float: right; }
+
+.speakers-table .speakers-table-block:nth-child(0n + 1) {
+  clear: left; }
+  .speakers-table .speakers-table-block ul {
+    padding-left: 30px;
+    padding-top: 18px;
+    position: relative;
+    list-style: none; }
+  .speakers-table .speakers-table-block li {
+    height: 50px;
+    text-align: left;
+    margin: 0;
+    padding: 0; }
+    .speakers-table .speakers-table-block li .speakers-active {
+      opacity: 0.87;
+      color: #2196f3; }
+
+.speakers-table .speakers-table-block:nth-child(2) {
+  width: calc(99.99% * 3/4 - (30px - 30px * 3/4)); }
+
+.speakers-table .speakers-table-block:nth-child(2):nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none; }
+
+.speakers-table .speakers-table-block:nth-child(2):last-child {
+  margin-right: 0; }
+
+.speakers-table .speakers-table-block:nth-child(2):nth-child(0n) {
+  margin-right: 0;
+  float: right; }
+
+.speakers-table .speakers-table-block:nth-child(2):nth-child(0n + 1) {
+  clear: left; }
+  .speakers-table .speakers-table-block:nth-child(2) .table-header {
+    height: 50px;
+    width: 100%;
+    background: #2196f3;
+    position: relative; }
+  .speakers-table .speakers-table-block:nth-child(2) .table-header > * {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+    .speakers-table .speakers-table-block:nth-child(2) .table-header h6 {
+      text-align: center;
+      color: white;
+      opacity: 0.7; }
+  .speakers-table .speakers-table-block:nth-child(2) table {
+    width: 100%;
+    border-collapse: collapse; }
+    .speakers-table .speakers-table-block:nth-child(2) table tr {
+      border: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, 0.1);
+      height: 50px;
+      opacity: 0.54; }
+      .speakers-table .speakers-table-block:nth-child(2) table tr td:nth-child(1) {
+        text-align: center;
+        padding-left: 10px; }
+      .speakers-table .speakers-table-block:nth-child(2) table tr td:nth-child(2) {
+        text-align: left; }
+      .speakers-table .speakers-table-block:nth-child(2) table tr td:nth-child(3) {
+        text-align: left; }
+      .speakers-table .speakers-table-block:nth-child(2) table tr td:nth-child(4) {
+        text-align: left;
+        font-size: 14px;
+        opacity: 0.54; }
+      .speakers-table .speakers-table-block:nth-child(2) table tr td:nth-child(5) {
+        text-align: right;
+        padding-right: 20px; }
+      .speakers-table .speakers-table-block:nth-child(2) table tr img {
+        width: 24px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 2px;
+        opacity: 0.38; }
 
 body {
   font-family: 'Roboto'; }

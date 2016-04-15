@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/speakers', function () {
+    return view('speakers');
+});
+
+Route::get('/decor', function () {
+    return view('decor');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

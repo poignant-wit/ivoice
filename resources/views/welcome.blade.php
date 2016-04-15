@@ -1,36 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Ivoice</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet'
-          type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="/css/app.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<nav>
-    <div class="nav">
-        <div class="nav-block">
-            <h5>IVR-VOICE</h5>
-        </div>
-        <div class="nav-block">
-            <ul>
-                <li><a>ПОРТФОЛИО</a></li>
-                <li><a>ДИКТОРЫ</a></li>
-                <li><a>ОФОРМЛЕНИЕ</a></li>
-                <li><a>ПРАЙС</a></li>
-                <li><a>ОПЛАТА</a></li>
-            </ul>
-        </div>
-        <div class="nav-block">
-            <h6>КОНТАКТЫ</h6>
-        </div>
+
+
+@extends('template.app')
+
+@section('content')
+
+
+    <div class="bg-welcome">
+
+
     </div>
-</nav>
+
+
 <section class="intro">
     <div class="title">
         <h4>ГОЛОСОВЫЕ ПРИВЕТСТВИЯ</h4>
         <h6>для телефонии и IVR</h6>
+        <p><strong>3657</strong> довольных заказчика</p>
+        <p><strong>368957</strong> записанных сообщений</p>
         <div class="intro-buttons">
             <a class="btn btn-primary">СДЕЛАТЬ ЗАКАЗ</a>
             <a class="btn btn-transparent-white">ОНЛАЙН КОНСУЛЬТАНТ</a>
@@ -106,78 +92,160 @@
 
 
 {{--clients--}}
-<section class="clients with-background-blue">
+<section class="clients with-background-black">
     <h6 class="section-header">Наши клиенты</h6>
     <div class="section-header-line">
     </div>
     <ul>
-        <li><img src="http://3.bp.blogspot.com/-5imOvX_YDlk/TYjP7Mo2_eI/AAAAAAAAAK8/3hDeTQYBU1E/s1600/splash_logo3.gif"></li>
-        <li><img src="http://tourdream.net/wp-content/uploads/2012/03/2012-03-22_01_TEZ-Tour-Logo.jpg"></li>
-        <li><img src="http://www.assettocorsa.net/wp-content/uploads/2013/09/logo1.png"></li>
-        <li><img src="http://38.media.tumblr.com/avatar_8226120358f0_128.png"></li>
+        <li>
+            <img src="http://3.bp.blogspot.com/-5imOvX_YDlk/TYjP7Mo2_eI/AAAAAAAAAK8/3hDeTQYBU1E/s1600/splash_logo3.gif">
+            <div class="img-cover"></div>
+        </li>
+        <li>
+            <img src="http://tourdream.net/wp-content/uploads/2012/03/2012-03-22_01_TEZ-Tour-Logo.jpg">
+        </li>
+        <li>
+            <img src="http://www.assettocorsa.net/wp-content/uploads/2013/09/logo1.png">
+        </li>
+        <li>
+            <img src="http://38.media.tumblr.com/avatar_8226120358f0_128.png">
+        </li>
     </ul>
-</section>
-{{--end clients--}}
+    <br>
+    <br>
+    <br>
+    <h6 class="section-header">О нас говорят</h6>
+    <div class="section-header-line"></div>
+    <br>
 
-
-<section class="comments with-background-white-100">
-    <h6 class="section-header">Отзывы</h6>
-    <div class="section-header-line">
-    </div>
     <div class="container">
         <div class="comment-block">
+
             <div class="circle">
                 <img class="circle-inner"
                      src="http://avatarbox.net/avatars/img26/the_terminator_avatar_picture_27066.jpg">
             </div>
-            <h5>
-                Какой-то крутой чувак
+            <h5 class="comment-author">
+                Арнольд Шварценнегер
             </h5>
-            <h6>
-                Из такой-то конторы
+            <h6 class="comment-author-company">
+                из фильма Командос
             </h6>
-            <div class="section-header-line">
-            </div>
-            <p>
-                «Это, мать его, лучшй сервис в мире. В жизни нчиего лучшего не встречал. Это круче, чем качалка»
-            </p>
+
+            <p><strong>...</strong></p>
+            <p>«Все было офигенно. Слушаю сообщение каждое утро. Лучше утреннего кофе»</p>
+
+
         </div>
         <div class="comment-block">
+
             <div class="circle">
                 <img class="circle-inner"
-                     src="http://avatarbox.net/avatars/img26/the_terminator_avatar_picture_27066.jpg">
+                     src="http://www.uznayvse.ru/images/celebs/bwillis_medium.jpg">
             </div>
-            <h5>
-                Какой-то крутой чувак
+            <h5 class="comment-author">
+                Брюс Виллис
             </h5>
-            <h6>
-                Из такой-то конторы
+            <h6 class="comment-author-company">
+                Из фильм Крепкий Орешек
             </h6>
-            <div class="section-header-line">
-            </div>
-            <p>
-                «Это, мать его, лучшй сервис в мире. В жизни нчиего лучшего не встречал. Это круче, чем качалка»
-            </p>
+
+            <p><strong>...</strong></p>
+            <p>«Всем советую это удовольствие. Ради этого я бы подстригся налысо»</p>
+
+
         </div>
         <div class="comment-block">
+
             <div class="circle">
                 <img class="circle-inner"
-                     src="http://avatarbox.net/avatars/img26/the_terminator_avatar_picture_27066.jpg">
+                     src="https://umd1.mycdn.me/image?id=812150945842&bid=812150974770&t=34&plc=MOBILE&ts=0000000052000001e6&tkn=*cp3uwwiuV8Yr3EhZSSHVRXC8Paw">
             </div>
-            <h5>
-                Какой-то крутой чувак
+            <h5 class="comment-author">
+                Чак Норрис
             </h5>
-            <h6>
-                Из такой-то конторы
+            <h6 class="comment-author-company">
+                Из всех фильмов
             </h6>
-            <div class="section-header-line">
-            </div>
-            <p>
-                «Это, мать его, лучшй сервис в мире. В жизни нчиего лучшего не встречал. Это круче, чем качалка»
-            </p>
+
+            <p><strong>...</strong></p>
+            <p>«Крутая контора. Как я»</p>
+
+
+
         </div>
+
+
+
+
     </div>
+
+
+
+
+
+
+
 </section>
+{{--end clients--}}
+{{--<section class="comments with-background-white-100">--}}
+    {{--<h6 class="section-header">Отзывы</h6>--}}
+    {{--<div class="section-header-line">--}}
+    {{--</div>--}}
+    {{--<div class="container">--}}
+        {{--<div class="comment-block">--}}
+            {{--<div class="circle">--}}
+                {{--<img class="circle-inner"--}}
+                     {{--src="http://avatarbox.net/avatars/img26/the_terminator_avatar_picture_27066.jpg">--}}
+            {{--</div>--}}
+            {{--<h5>--}}
+                {{--Какой-то крутой чувак--}}
+            {{--</h5>--}}
+            {{--<h6>--}}
+                {{--Из такой-то конторы--}}
+            {{--</h6>--}}
+            {{--<div class="section-header-line">--}}
+            {{--</div>--}}
+            {{--<p>--}}
+                {{--«Это, мать его, лучшй сервис в мире. В жизни нчиего лучшего не встречал. Это круче, чем качалка»--}}
+            {{--</p>--}}
+        {{--</div>--}}
+        {{--<div class="comment-block">--}}
+            {{--<div class="circle">--}}
+                {{--<img class="circle-inner"--}}
+                     {{--src="http://avatarbox.net/avatars/img26/the_terminator_avatar_picture_27066.jpg">--}}
+            {{--</div>--}}
+            {{--<h5>--}}
+                {{--Какой-то крутой чувак--}}
+            {{--</h5>--}}
+            {{--<h6>--}}
+                {{--Из такой-то конторы--}}
+            {{--</h6>--}}
+            {{--<div class="section-header-line">--}}
+            {{--</div>--}}
+            {{--<p>--}}
+                {{--«Это, мать его, лучшй сервис в мире. В жизни нчиего лучшего не встречал. Это круче, чем качалка»--}}
+            {{--</p>--}}
+        {{--</div>--}}
+        {{--<div class="comment-block">--}}
+            {{--<div class="circle">--}}
+                {{--<img class="circle-inner"--}}
+                     {{--src="http://avatarbox.net/avatars/img26/the_terminator_avatar_picture_27066.jpg">--}}
+            {{--</div>--}}
+            {{--<h5>--}}
+                {{--Какой-то крутой чувак--}}
+            {{--</h5>--}}
+            {{--<h6>--}}
+                {{--Из такой-то конторы--}}
+            {{--</h6>--}}
+            {{--<div class="section-header-line">--}}
+            {{--</div>--}}
+            {{--<p>--}}
+                {{--«Это, мать его, лучшй сервис в мире. В жизни нчиего лучшего не встречал. Это круче, чем качалка»--}}
+            {{--</p>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
 <section class="howto with-background-white-50">
     <h6 class="section-header">Как сделать заказ</h6>
     <div class="section-header-line"></div>
@@ -236,58 +304,14 @@
         </div>
     </div>
 </section>
-
-
 <section class="order-button with-background-blue">
-
     <div class="order-button-block">
         <h5>Начать работу?</h5>
     </div>
-
     <div class="order-button-block">
-
         <a class="btn btn-primary">СДЕЛАТЬ ЗАКАЗ</a>
     </div>
-
-
 </section>
 
+@stop
 
-<section class="footer">
-    <div class="container">
-        <div class="footer-block send-message">
-            <h6>Отправьте нам сообщение:</h6>
-            <form action="action_page.php">
-                <input type="text" name="firstname" placeholder="Ваше имя"><br>
-                <br>
-                <textarea type="text" rows="8" placeholder="Текст сообщения"></textarea><br><br>
-                <a type="submit" value="Submit" class="btn btn-primary">Отправить</a>
-            </form>
-        </div>
-        <div class="footer-block">
-            <div class="footer-block">
-                <a href=""><h6>Что такое ИВР?</h6></a>
-                <a href=""><h6>Что такое sgdfgsdfg drgИВР?</h6></a>
-                <a href=""><h6>Что такое sgdfgsdfg drgИВР?</h6></a>
-                <a href=""><h6>Что такое sgdfgsdfg drgИВР?</h6></a>
-                <a href=""><h6>Что такое sgdfgsdfg drgИВР?</h6></a>
-                <a href=""><h6>Что такое sgdfgsdfg drgИВР?</h6></a>
-                <a href=""><h6>Что такое sgdfgsdfg drgИВР?</h6></a>
-                <a href=""><h6>Что такое sgdfgsdfg drgИВР?</h6></a>
-                <a href=""><h6>Что такое sgdfgsdfg drgИВР?</h6></a>
-            </div>
-            <div class="footer-block">
-                <a href=""><h6>Что такоzdfgzdfgzdfgе ИВР?</h6></a>
-                <a href=""><h6>Что таzdfgzdfgzdfgzdfgкое ИВР?</h6></a>
-                <a href=""><h6>Что таzdfgzdfgzdfgzdfgкое ИВР?</h6></a>
-                <a href=""><h6>Что таzdfgzdfgzdfgzdfgкое ИВР?</h6></a>
-                <a href=""><h6>Что таzdfgzdfgzdfgzdfgкое ИВР?</h6></a>
-                <a href=""><h6>Что таzdfgzdfgzdfgzdfgкое ИВР?</h6></a>
-                <a href=""><h6>Что таzdfgzdfgzdfgzdfgкое ИВР?</h6></a>
-            </div>
-        </div>
-    </div>
-    <h6>IVR-VOICE 2016</h6>
-</section>
-</body>
-</html>

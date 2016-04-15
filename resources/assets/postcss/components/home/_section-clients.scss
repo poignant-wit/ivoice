@@ -1,18 +1,22 @@
 .clients {
 
+  @include inner-shadow();
 
   .section-header{
     color: white;
     font-weight: 300;
     margin-bottom: $section-padding-element / 2;
-    opacity: $opacity-white-primary;
+    opacity: $opacity-white-secondary;
   }
+
+
 
 
   ul{
 
     white-space: nowrap;
-    overflow-x: auto;
+
+    overflow: hidden;
 
     li{
       width: 200px;
@@ -30,6 +34,20 @@
         position: relative;
         left: 50px;
         top: 50px;
+        opacity: 0.6;
+        filter: grayscale(100%);
+
+      }
+
+      .img-cover{
+        width: 150px;
+        height: 150px;
+        background: $white-background-color-100;
+        opacity: 0.7;
+        position: relative;
+
+        left: 25px;
+        top: -100px;
 
       }
 
@@ -38,6 +56,38 @@
   }
 
 
+  .comment-author{
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: $section-padding-element/4;
+    opacity: $opacity-white-disabled;
+  }
+
+  .comment-author-company{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: $section-padding-element/4;
+    opacity: $opacity-white-disabled;
+  }
+
+  p{
+    color: white;
+    opacity: $opacity-white-secondary;
+    padding: 10px;
+  }
+
+  .comment-block{
+
+    lost-column: 1/3;
+
+
+  }
 
 
 }

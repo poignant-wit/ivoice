@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "helpers.scss";
+@import "typography";
 
 @import "components/nav";
 @import "components/buttons";
@@ -13,13 +14,18 @@
 @import "components/home/section-footer";
 @import "components/home/section-order-button";
 
+@import "components/speakers/section-intro";
+@import "components/speakers/section-speakers-table";
 
 
 html {
-  background: url("http://www.designshock.com/wp-content/uploads/2015/02/sea.jpg") no-repeat fixed;
-  background-size: cover;
+
 
 }
+
+
+
+
 
 body {
   font-family: 'Roboto';
