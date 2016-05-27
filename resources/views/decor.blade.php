@@ -14,7 +14,7 @@
 
 
     <section class="speakers-table with-background-white-100">
-        <h6 class="section-header">Выберите диктора</h6>
+        <h6 class="section-header">Заголовок о важности музыкального оформления</h6>
         <div class="section-header-line"></div>
         <div class="container">
             <div class="circle">
@@ -36,9 +36,10 @@
         <div class="container">
             <div class="speakers-table-block with-background-white-50">
                 <ul>
-                    <li><a href=""><h6 class="speakers-active">Дикторы России</h6></a></li>
-                    <li><a href=""><h6>Дикторы Украины</h6></a></li>
-                    <li><a href=""><h6>Иностранные дикторы</h6></a></li>
+                    <li><a href=""><h6 class="speakers-active">Быстрые</h6></a></li>
+                    <li><a href=""><h6>Медленные</h6></a></li>
+                    <li><a href=""><h6>Классика</h6></a></li>
+                    <li><a href=""><h6>Эффекты</h6></a></li>
                 </ul>
             </div>
             <div class="speakers-table-block with-background-white-50">
@@ -114,11 +115,6 @@
                 </table>
                 <br>
                 <br>
-
-
-
-
-
 
             </div>
         </div>

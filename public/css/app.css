@@ -371,8 +371,8 @@ nav {
   left: 0; }
 
 .intro {
-  height: 100vh;
-  top: 40vh;
+  height: 50vh;
+  top: 20vh;
   position: relative; }
   .intro h4 {
     color: white;
